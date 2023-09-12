@@ -1,0 +1,76 @@
+/* Reset some default styles for the body and buttons */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #9c27b0, #e91e63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #fff;
+    color: #9c27b0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+/* Style the audio controls */
+audio {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+/* Style the input range slider */
+input[type="range"] {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Style the buttons inside the container */
+.container button {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Decrease padding for smaller screens */
+    }
+    
+    button {
+        font-size: 14px; /* Decrease button font size */
+    }
+    
+    input[type="range"] {
+        width: 100%; /* Make the range input full-width on smaller screens */
+        max-width: none;
+    }
+}
